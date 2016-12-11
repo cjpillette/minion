@@ -1,0 +1,31 @@
+.page-section {
+
+	&--top {
+		background-color: $mainOrange;
+	}
+
+	&__title {
+		font-size: 1.25rem;
+		font-height: 200;
+		padding-top: 0.3rem;
+		padding-bottom:0;
+		font-style: italic;
+		color: $mainBlue;
+	}
+
+	&--bottom {
+	  position: relative;
+	  @mixin clearfix;
+      
+    }
+
+	&__text-bottom {
+		position: absolute;
+		top:0;
+		left:0;
+		text-align: center;
+	
+	}
+	
+  
+}
