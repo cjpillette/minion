@@ -7,6 +7,15 @@
 	width: 33.33%;
 	}
 
+	&__large-4--small {
+		float:left;
+		width: 30%;
+	}
+
+	&--gutters {
+		margin-right: -54px;
+	}
+
 	&--equal-height {
 		
 			display: flex;

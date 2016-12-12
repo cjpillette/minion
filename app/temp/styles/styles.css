@@ -608,6 +608,15 @@ img {
   width: 33.33%;
 }
 
+.row__large-4--small {
+  float:left;
+  width: 30%;
+}
+
+.row--gutters {
+  margin-right: -54px;
+}
+
 .row--equal-height {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,3 +636,17 @@ img {
 		margin-bottom: 98px;
 		margin-right: 10px;
 	}
+
+.postborder-frame {
+		border: 1px solid #000;
+		display: inline-block;
+		padding: 20px 0px 20px 0px;
+		margin: 10px;
+		background-color: rgba(47,85,114, 0.3);
+		text-align: center;
+	}
+
+.postborder-frame--survey {
+  width: 100%;
+  margin-bottom: 25px;
+}
