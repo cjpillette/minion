@@ -517,27 +517,27 @@ img {
   font-size: 1.25rem;
   font-height: 200;
   padding-top: 0.3rem;
-  padding-bottom:0;
+  padding-bottom:10px;
   font-style: italic;
   color: #2f5572;
 }
 
+.page-section--middle {}
+
 .page-section--bottom {
-  position: relative;
-
-  @mixin clearfix;
-}
-
-.page-section__text-bottom {
-  position: absolute;
-  top:0;
-  left:100px;
-  text-align: center;
+  background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+  background-size: cover;
 }
 
 .icon {
-	width: 5%;
-	height: auto;
+	width: 55px;
+	height: 55px;
+}
+
+.icon--blue-background{
+  background-color: #2f5572;
+  border-radius: 40px;
+  padding: 10px;
 }
 
 .wrapper {
@@ -594,6 +594,36 @@ img {
 .container {
 	max-width: 940px;
 	margin: 0 auto;
-	padding-left: 40px;
-	padding-right: 40px;
+
 }
+
+.row {
+	
+	@mixin clearfix;
+	
+}
+
+.row__large-4 {
+  float: left;
+  width: 33.33%;
+}
+
+.row--equal-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row--equal-height > div {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.border-frame {
+		border: 1px solid #000;
+		padding: 0 18px 1px 18px;
+		margin-bottom: 98px;
+		margin-right: 10px;
+	}

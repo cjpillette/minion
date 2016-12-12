@@ -1,4 +1,10 @@
 .icon {
-	width: 5%;
-	height: auto;
+	width: 55px;
+	height: 55px;
+
+	&--blue-background{
+		background-color: $mainBlue;
+		border-radius: 40px;
+		padding: 10px;
+	}
 }

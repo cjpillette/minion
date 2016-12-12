@@ -1,0 +1,21 @@
+.row {
+	
+	@mixin clearfix;
+
+	&__large-4 {
+	float: left;
+	width: 33.33%;
+	}
+
+	&--equal-height {
+		
+			display: flex;
+		
+
+		& > div {
+			float: none;
+			display: flex;
+		}
+	}
+	
+}
