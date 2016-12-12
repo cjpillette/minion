@@ -1,0 +1,46 @@
+.nav {
+	background-color: $mainBlue;
+	padding: 10px 0;
+	position: relative;
+	width: 100%;
+
+
+	
+	&--pull-right {
+		float: right;
+
+		@mixin clearfix;
+	}
+
+	ul {
+		margin:0;
+		padding:0;
+		@mixin clearfix;
+	}
+
+	li {
+		list-style:none;
+		display:inline-block;
+		padding-right:7px;
+	}
+
+	li:last-child {
+		padding-right: 0;
+	}
+
+	a {
+		color: #FFF;
+		font-weight:300;
+		text-decoration: none;
+		display: block;
+		padding: 5px 8px;
+		font-size: 1.1rem;
+		background-color: rgba($mainBlue, .5);
+
+
+		&.is-current-link {
+			color:#fabb69;
+		}
+
+	}
+}

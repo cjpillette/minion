@@ -1,5 +1,7 @@
 .page-section {
 
+	border-top: 5px solid $mainBlue;
+	
 
 	&--top {
 		background-color: $mainOrange;

@@ -468,6 +468,8 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .large-hero {
@@ -509,6 +511,13 @@ img {
   margin-right: auto;
 }
 
+.page-section {
+
+	border-top: 5px solid #2f5572;
+
+
+}
+
 .page-section--top {
   background-color: #d59541;
 }
@@ -532,6 +541,7 @@ img {
 .icon {
 	width: 55px;
 	height: 55px;
+	box-shadow: 2px 2px 5px #000;
 }
 
 .icon--blue-background{
@@ -632,10 +642,16 @@ img {
 
 .border-frame {
 		border: 1px solid #000;
+		box-shadow: 2px 2px 5px #000;
 		padding: 0 18px 1px 18px;
 		margin-bottom: 98px;
 		margin-right: 10px;
+		text-align: center;
 	}
+
+.border-frame--background-white {
+  background-color: #FFF;
+}
 
 .postborder-frame {
 		border: 1px solid #000;
@@ -644,9 +660,66 @@ img {
 		margin: 10px;
 		background-color: rgba(47,85,114, 0.3);
 		text-align: center;
+		color: #FFF;
 	}
 
 .postborder-frame--survey {
   width: 100%;
   margin-bottom: 25px;
+}
+
+.nav {
+	background-color: #2f5572;
+	padding: 10px 0;
+	position: relative;
+	width: 100%;
+}
+
+.nav--pull-right {
+  float: right;
+
+  @mixin clearfix;
+}
+
+.nav ul {
+  margin:0;
+  padding:0;
+
+  @mixin clearfix;
+}
+
+.nav li {
+  list-style:none;
+  display:inline-block;
+  padding-right:7px;
+}
+
+.nav li:last-child {
+  padding-right: 0;
+}
+
+.nav a {
+  color: #FFF;
+  font-weight:300;
+  text-decoration: none;
+  display: block;
+  padding: 5px 8px;
+  font-size: 1.1rem;
+  background-color: rgba(#2f5572, .5);
+}
+
+.nav a.is-current-link {
+  color:#fabb69;
+}
+
+.logo {
+
+	width: 95px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
 }

@@ -1,7 +1,7 @@
 .icon {
 	width: 55px;
 	height: 55px;
-	
+	box-shadow: 2px 2px 5px #000;
 
 	&--blue-background{
 		background-color: $mainBlue;
