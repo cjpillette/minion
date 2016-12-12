@@ -544,10 +544,17 @@ img {
 	box-shadow: 2px 2px 5px #000;
 }
 
+.icon--small {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
 .icon--blue-background{
   background-color: #2f5572;
   border-radius: 40px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .container {
@@ -557,14 +564,19 @@ img {
 }
 
 .row {
-	
+
 	@mixin clearfix;
-	
+
 }
 
 .row__large-4 {
   float: left;
   width: 33.33%;
+}
+
+.row__large-2 {
+  float: left;
+  width: 15%;
 }
 
 .row__large-4--small {
@@ -611,6 +623,19 @@ img {
 		text-align: center;
 		color: #FFF;
 	}
+
+.postborder-frame--xs-padding {
+  padding: 9px;
+}
+
+.postborder-frame--active {
+  color: lightgrey;
+  background-color: #2f5572;
+}
+
+.postborder-frame--round-border {
+  border-radius: 20px;
+}
 
 .postborder-frame--survey {
   width: 100%;
@@ -678,4 +703,26 @@ img {
 
 .primary-nav a.is-current-link {
   color:#fabb69;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+
+}
+
+table, th, td {
+  /*border: 1px solid black;*/
+  /*text-align: center;*/
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.dark-background {
+  background-color: lightgrey;
 }
