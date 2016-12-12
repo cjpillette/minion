@@ -550,57 +550,6 @@ img {
   padding: 10px;
 }
 
-.wrapper {
-  overflow: hidden;
-  padding-left: 18px;
-  padding-right: 18px;
-  max-width: 980px;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.wrapper--medium {
-  max-width: 976px;
-}
-
-.wrapper--narrow {
-  max-width: 470px;
-}
-
-.wrapper--no-padding-until-medium {
-  padding-left: 0;
-  padding-right: 0;
-
-  @mixin atMedium {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-}
-
-.wrapper--no-padding-until-large {
-  padding-left: 0;
-  padding-right: 0;
-
-  @mixin atLarge {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-}
-
-.wrapper .wrapper {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.wrapper--b-margin {
-  margin-bottom: 1rem;
-
-  @mixin atSmall {
-    margin-bottom: 3.875rem;
-  }
-}
-
 .container {
 	max-width: 940px;
 	margin: 0 auto;
@@ -668,48 +617,19 @@ img {
   margin-bottom: 25px;
 }
 
-.nav {
+.site-header {
 	background-color: #2f5572;
-	padding: 10px 0;
-	position: relative;
+	padding: 10px 0 15px 0;
+	
 	width: 100%;
+
+
+	
+
 }
 
-.nav--pull-right {
+.site-header__btn-container {
   float: right;
-
-  @mixin clearfix;
-}
-
-.nav ul {
-  margin:0;
-  padding:0;
-
-  @mixin clearfix;
-}
-
-.nav li {
-  list-style:none;
-  display:inline-block;
-  padding-right:7px;
-}
-
-.nav li:last-child {
-  padding-right: 0;
-}
-
-.nav a {
-  color: #FFF;
-  font-weight:300;
-  text-decoration: none;
-  display: block;
-  padding: 5px 8px;
-  font-size: 1.1rem;
-  background-color: rgba(#2f5572, .5);
-}
-
-.nav a.is-current-link {
-  color:#fabb69;
 }
 
 .logo {
@@ -722,4 +642,40 @@ img {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+.primary-nav--pull-right {
+  float: right;
+}
+
+.primary-nav ul {
+  margin:0;
+  padding:0;
+
+  @mixin clearfix;
+}
+
+.primary-nav li {
+  list-style:none;
+  float: left;
+  display:inline-block;
+  padding-right:7px;
+}
+
+.primary-nav li:last-child {
+  padding-right: 0;
+}
+
+.primary-nav a {
+  color: #FFF;
+  font-weight:300;
+  text-decoration: none;
+  display: block;
+  padding: 5px 8px;
+  font-size: 1.1rem;
+  background-color: rgba(#2f5572, .5);
+}
+
+.primary-nav a.is-current-link {
+  color:#fabb69;
 }
