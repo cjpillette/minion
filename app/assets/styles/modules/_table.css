@@ -18,6 +18,12 @@ th, td {
   border-bottom: 1px solid #ddd;
 }
 
+.orange-text {
+  color: $mainOrange;
+}
+
 .dark-background {
   background-color: lightgrey;
+}
+
 }
