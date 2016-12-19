@@ -472,43 +472,17 @@ img {
   padding: 0;
 }
 
-.large-hero {
-  position: relative;
-
-}
-
-.large-hero__text-content {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
+table {
+  border-collapse: collapse;
   width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 8px;
   text-align: center;
-}
-
-.large-hero__title {
-  font-weight: 300;
-  color: #2f5572;
-  font-size: 4.8rem;
-  margin: 0;
-}
-
-.large-hero__subtitle {
-  font-weight: 300;
-  color: #2f5572;
-  font-size: 2.9rem;
-  margin: 0;
-}
-
-.large-hero__description {
-  color: #FFF;
-  font-size: 1.875rem;
-  font-weight: 100;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
-  max-width: 30rem;
-  margin-left: auto;
-  margin-right: auto;
+  border-bottom: 1px solid #ddd;
 }
 
 .page-section {
@@ -529,6 +503,10 @@ img {
   padding-bottom:10px;
   font-style: italic;
   color: #2f5572;
+}
+
+.page-section__title--smaller {
+  font-size: 0.8rem;
 }
 
 .page-section--middle {}
@@ -561,6 +539,7 @@ img {
 	max-width: 940px;
 	margin: 0 auto;
 
+
 }
 
 .row {
@@ -572,6 +551,16 @@ img {
 .row__large-4 {
   float: left;
   width: 33.33%;
+}
+
+.row__large-6 {
+  float: left;
+  width: 45%;
+}
+
+.row__large-12 {
+  float: left;
+  width: 90%;
 }
 
 .row__large-2 {
@@ -605,7 +594,7 @@ img {
 		border: 1px solid #000;
 		box-shadow: 2px 2px 5px #000;
 		padding: 0 18px 1px 18px;
-		margin-bottom: 98px;
+		margin-bottom: 10px;
 		margin-right: 10px;
 		text-align: center;
 	}
@@ -708,7 +697,9 @@ img {
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 20px;
   border: 1px solid black;
+
 
 }
 
@@ -725,4 +716,26 @@ th, td {
 
 .dark-background {
   background-color: lightgrey;
+}
+
+.wrapper {
+  @mixin clearfix;
+  display: block;
+}
+
+.modal {
+
+
+		position: fixed;
+		background-color: #d59541;
+		border: 1px solid #2f5572;
+		left: 50%;
+		-webkit-transform: translateX(-50%, 0);
+		        transform: translateX(-50%, 0);
+	
+}
+
+.footer {
+
+	float: left;
 }

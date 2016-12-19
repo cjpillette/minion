@@ -1,0 +1,10 @@
+.modal {
+
+
+		position: fixed;
+		background-color: $mainOrange;
+		border: 1px solid $mainBlue;
+		left: 50%;
+		transform: translateX(-50%, 0);
+	
+}

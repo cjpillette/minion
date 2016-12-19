@@ -11,17 +11,17 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'Browser market shares. January, 2015 to May, 2015'
+            text: 'Volume of BRM interception'
         },
         subtitle: {
-            text: 'Click the columns to view versions. Source: <a href="http://netmarketshare.com">netmarketshare.com</a>.'
+            text: 'at the border'
         },
         xAxis: {
             type: 'category'
         },
         yAxis: {
             title: {
-                text: 'Total percent market share'
+                text: ''
             }
 
         },
@@ -33,225 +33,141 @@ $(function () {
                 borderWidth: 0,
                 dataLabels: {
                     enabled: true,
-                    format: '{point.y:.1f}%'
+                    format: '{point.y}'
                 }
             }
         },
 
         tooltip: {
             headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b> of total<br/>'
         },
 
         series: [{
-            name: 'Brands',
+            name: 'Border activities',
             colorByPoint: true,
             data: [{
-                name: 'Microsoft Internet Explorer',
-                y: 56.33,
-                drilldown: 'Microsoft Internet Explorer'
+                name: 'SPoT',
+                y: 56,
+                drilldown: 'SPoT'
             }, {
-                name: 'Chrome',
-                y: 24.03,
-                drilldown: 'Chrome'
+                name: 'Airport',
+                y: 24,
+                drilldown: 'Airport'
             }, {
-                name: 'Firefox',
-                y: 10.38,
-                drilldown: 'Firefox'
+                name: 'Mail Centre',
+                y: 10,
+                drilldown: 'Mailcentre'
             }, {
-                name: 'Safari',
-                y: 4.77,
-                drilldown: 'Safari'
+                name: 'Seaport',
+                y: 4,
+                drilldown: 'Seaport'
             }, {
-                name: 'Opera',
-                y: 0.91,
-                drilldown: 'Opera'
-            }, {
-                name: 'Proprietary or Undetectable',
-                y: 0.2,
-                drilldown: null
+                name: 'AQP',
+                y: 1,
+                drilldown: 'AQP'
             }]
         }],
         drilldown: {
             series: [{
-                name: 'Microsoft Internet Explorer',
-                id: 'Microsoft Internet Explorer',
+                name: 'SPoT',
+                id: 'SPoT',
                 data: [
                     [
-                        'v11.0',
-                        24.13
+                        'Dirty cars',
+                        25
                     ],
                     [
-                        'v8.0',
-                        17.2
+                        "cars with V&G",
+                        17
                     ],
                     [
-                        'v9.0',
-                        8.11
+                        'dogs',
+                        8
                     ],
                     [
-                        'v10.0',
-                        5.33
-                    ],
-                    [
-                        'v6.0',
-                        1.06
-                    ],
-                    [
-                        'v7.0',
-                        0.5
-                    ]
-                ]
-            }, {
-                name: 'Chrome',
-                id: 'Chrome',
-                data: [
-                    [
-                        'v40.0',
+                        'wildlife',
                         5
                     ],
                     [
-                        'v41.0',
-                        4.32
+                        'goldfish',
+                        1
+                     ]                
+                ]
+            }, {
+                name: 'Airport',
+                id: 'Airport',
+                data: [
+                    [
+                        'LST',
+                        5
                     ],
                     [
-                        'v42.0',
-                        3.68
+                        'HBA',
+                        3
                     ],
                     [
-                        'v39.0',
-                        2.96
+                        'DPO',
+                        2
                     ],
                     [
-                        'v36.0',
-                        2.53
+                        'BWT',
+                        1
                     ],
                     [
-                        'v43.0',
-                        1.45
-                    ],
-                    [
-                        'v31.0',
-                        1.24
-                    ],
-                    [
-                        'v35.0',
-                        0.85
-                    ],
-                    [
-                        'v38.0',
-                        0.6
-                    ],
-                    [
-                        'v32.0',
-                        0.55
-                    ],
-                    [
-                        'v37.0',
-                        0.38
-                    ],
-                    [
-                        'v33.0',
-                        0.19
-                    ],
-                    [
-                        'v34.0',
-                        0.14
-                    ],
-                    [
-                        'v30.0',
-                        0.14
+                        'FLS',
+                        1
                     ]
                 ]
             }, {
-                name: 'Firefox',
-                id: 'Firefox',
+                name: 'Mail Centre',
+                id: 'Mailcentre',
                 data: [
                     [
-                        'v35',
-                        2.76
+                        'Kings Meadow',
+                        10
                     ],
                     [
-                        'v36',
-                        2.32
-                    ],
-                    [
-                        'v37',
-                        2.31
-                    ],
-                    [
-                        'v34',
-                        1.27
-                    ],
-                    [
-                        'v38',
-                        1.02
-                    ],
-                    [
-                        'v31',
-                        0.33
-                    ],
-                    [
-                        'v33',
-                        0.22
-                    ],
-                    [
-                        'v32',
-                        0.15
+                        'Mornington',
+                        8
                     ]
                 ]
             }, {
-                name: 'Safari',
-                id: 'Safari',
+                name: 'Seaport',
+                id: 'Seaport',
                 data: [
                     [
-                        'v8.0',
-                        2.56
+                        'Cruise Vessels',
+                        3
                     ],
                     [
-                        'v7.1',
-                        0.77
+                        'Cargo Vessels',
+                        2
                     ],
                     [
-                        'v5.1',
-                        0.42
+                        'Yacht',
+                        1
                     ],
                     [
-                        'v5.0',
-                        0.3
-                    ],
-                    [
-                        'v6.1',
-                        0.29
-                    ],
-                    [
-                        'v7.0',
-                        0.26
-                    ],
-                    [
-                        'v6.2',
-                        0.17
+                        'AAD',
+                        1
                     ]
                 ]
             }, {
-                name: 'Opera',
-                id: 'Opera',
+                name: 'AQP',
+                id: 'AQP',
                 data: [
                     [
-                        'v12.x',
-                        0.34
+                        'StarTrack',
+                        3
                     ],
                     [
-                        'v28',
-                        0.24
+                        'Toll IPEC',
+                        2
                     ],
                     [
-                        'v27',
-                        0.17
-                    ],
-                    [
-                        'v29',
-                        0.16
+                        'Tasfreight',
+                        1
                     ]
                 ]
             }]
@@ -284,7 +200,7 @@ $(function () {
             enabled: false
         },
         series: [{
-            name: 'Unique users',
+            name: 'cases',
             data: [
                 ['Verbal warning',      30],
                 ['Written warning',            1],
@@ -321,13 +237,77 @@ $(function () {
             enabled: false
         },
         series: [{
-            name: 'Unique users',
+            name: 'cases',
             data: [
                 ['Warning Letter',         20],
                 ['Investigation',           8],
                 ['Interview',               3],
                 ['IN',                      2],
                 ['Court',                   1]
+            ]
+        }]
+    });
+});
+
+
+$(function () {
+
+    // Radialize the colors
+    Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function (color) {
+        return {
+            radialGradient: {
+                cx: 0.5,
+                cy: 0.3,
+                r: 0.7
+            },
+            stops: [
+                [0, color],
+                [1, Highcharts.Color(color).brighten(-0.3).get('rgb')] // darken
+            ]
+        };
+    });
+
+    // Build the chart
+    Highcharts.chart('container4', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Airport Inspection Regime'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    },
+                    connectorColor: 'silver'
+                }
+            }
+        },
+        series: [{
+            name: 'Inspection Regime',
+            data: [
+                { name: 'DDT+BO', y: 45 },
+                {
+                    name: 'Dog present',
+                    y: 45,
+                    sliced: true,
+                    selected: true
+                },
+                { name: 'DDT alone', y: 30 },
+                { name: 'BO alone', y: 17 }, 
+                { name: 'Flight missed', y: 8 }
             ]
         }]
     });

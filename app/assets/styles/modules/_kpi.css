@@ -1,0 +1,28 @@
+.kpi {
+		margin:0;
+		padding:0;
+		@mixin clearfix;
+
+		&--container1 {
+			float: left;
+			display:inline-block;
+		}
+
+		&--container2 {
+			float: left;
+			display:inline-block;
+		}
+
+		&--container3 {
+			float: left;
+			display:inline-block;
+		}
+
+		&__frame {
+		border: 1px solid $mainBlue;
+		display: inline-block;
+		padding: 20px 0px 20px 0px;
+		margin: 10px;
+		}
+
+}
