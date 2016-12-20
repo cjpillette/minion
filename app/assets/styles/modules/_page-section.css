@@ -14,6 +14,10 @@
 		padding-bottom:10px;
 		font-style: italic;
 		color: $mainBlue;
+
+		&--is-red {
+			color: #742f43;
+		}
 	}
 
 	&__title--smaller {

@@ -1,6 +1,7 @@
 jQuery(document).ready(function () {
+    jQuery("#flight-content").hide();
 	jQuery("#flight-title").click(function () {
-		jQuery("#airport-content").slideToggle();
+		jQuery("#flight-content").slideToggle();
 	});
 });
 
@@ -312,3 +313,4 @@ $(function () {
         }]
     });
 });
+

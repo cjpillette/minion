@@ -1,4 +1,5 @@
 .wrapper {
   @mixin clearfix;
   display: block;
+  padding-bottom: 80px;
 }

@@ -1,10 +1,59 @@
 .modal {
-
-
-		position: fixed;
-		background-color: $mainOrange;
-		border: 1px solid $mainBlue;
-		left: 50%;
-		transform: translateX(-50%, 0);
 	
+		/*&--container {
+			position: fixed;
+			z-index: 155;
+			background-color: rgba(255, 255, 255, .94);
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			opacity: 0;
+			visibility: hidden;
+			transform: scale(1.2);
+			transition: all .3s ease-out;
+		}*/
+
+		&--centered {
+			text-align: center;
+		}
+
+		&__form {
+			border: 1px solid $mainBlue;
+			border-radius: 5px;
+			width: 70%;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 20px 5px;
+		}
+
+			&__form__btn{
+
+			border: 1px solid #000;
+		  	background-color: $mainBlue;
+		 	border-radius: 5px;
+		  	padding: 10px 10px;
+		 	 margin: 10px 10px;
+		 	 cursor: pointer;
+		 	 color: #FFF;
+
+		 	 &:hover {
+		 	 	background-color: $mainOrange;
+
+		 	 }
+		}
+
+		/*$--is-visible {
+			opacity: 1;
+			visibility: visible;
+			transform: scale(1);
+		}
+
+		&--is-red {
+	 	background-color: #676767;
+		}*/
+
+
 }
+
